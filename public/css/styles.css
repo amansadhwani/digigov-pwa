@@ -1,0 +1,153 @@
+/* colours */
+:root{
+  --primary: #508AEB;
+  --secondary: #5E93ED;
+  --title: #FFFFFF;
+}
+
+/* layout styles */
+nav{
+  background: var(--primary);
+  border-bottom: 10px solid var(--secondary);
+}
+nav a{
+  text-transform: uppercase;
+  color: var(--title);
+}
+nav a span{
+  font-weight: bold;
+}
+nav .sidenav-trigger{
+  margin: 0;
+}
+
+/* recipe styles */
+.recipes{
+  margin-top: 20px;
+}
+.card-panel.recipe{
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0px 1px 3px rgba(90,90,90,0.1);
+  display: grid;
+  grid-template-columns: 3fr 6fr 1fr;
+  grid-template-areas: "image details delete";
+  position: relative;
+}
+.recipe img{
+  grid-area: image;
+  max-width: 60px;
+}
+.recipe-details{
+  grid-area: details;
+  margin-top: 6px;
+}
+.recipe-delete{
+  grid-area: delete;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.recipe-delete i{
+  font-size: 24px;
+  cursor: pointer;
+}
+.recipe-title{
+  font-weight: bold;
+}
+.recipe-ingredients{
+  font-size: 0.8em;
+}
+
+/* form-styles */
+.add-btn{
+  background: var(--primary) !important;
+}
+input{
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+.side-form button{
+  background: var(--primary);
+  box-shadow: 1px 1px 3px rgba(90,90,90,0.2);
+}
+form .input-field{
+  margin-top: 30px;
+}
+.alignment{
+  text-align:center;
+}
+.sidenav{
+  width:450px;
+}
+.sidenav-trigger{
+  cursor: pointer;
+}.date{
+  font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    font-family: 'Abril Fatface', serif;
+}
+.sidenav-trigger{
+  color: var(--title) !important;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: var(--primary);
+  color: white;
+  text-align: center;
+}
+
+.contentheight{
+  height:65%;
+  overflow:auto;
+
+}
+
+
+
+.style-5::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.style-5::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.style-5::-webkit-scrollbar-thumb
+{
+	background-color: #0ae;
+	
+	background-image: -webkit-gradient(linear, 0 0, 0 100%,
+	                   color-stop(.5, rgba(255, 255, 255, .2)),
+					   color-stop(.5, transparent), to(transparent));
+}
+
+.marginbtn{
+  margin-top:20px;
+}
+.date{
+  margin-top:5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidenav{
+    width:300px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .sidenav{
+    width:300px;
+  }
+
+}
